@@ -1,0 +1,44 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.main {
+    background-image: url("./img/main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main h1 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 4em;
+    margin: 32px;
+}
+.need_lift {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    margin-top: 32px;;
+}
+.lift_item {
+    width: 800px;
+    max-width: 80%;
+}
+.skill_img {
+    width: 128px;
+    height: 128px;;
+}
+footer {
+    margin-top: 32px;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 48px;
+    text-align: right;
+}
