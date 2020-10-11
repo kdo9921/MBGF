@@ -4,21 +4,36 @@ html, body {
     font-family: Helvetica, Arial, sans-serif;
 }
 .main {
-    background-image: url("./img/main.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.bg_img {
+    background-image: url("./img/main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
 .main h1 {
     display: inline-block;
     color: #ffffff;
     font-size: 4em;
     margin: 32px;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    z-index: 10;
+}
+.content {
+    padding: 16px 0;
+    width: 100%;
+    background-color: #ffffff;
 }
 .need_lift {
     display: inline-block;
@@ -36,9 +51,13 @@ html, body {
     height: 128px;;
 }
 footer {
-    margin-top: 32px;
     background-color: #333333;
     color: #ffffff;
     padding: 48px;
     text-align: right;
 }
+
+a:link { color: #cccccc; text-decoration: none; } /* 링크 방문 전 : 파란색 */
+a:visited { color: #cccccc; } /* 링크 방문 후 : 주황색 */
+a:hover { color: #9ce159; } /* 링크에 마우스 오버 : 초록색 */
+a:active { color: #999999; } /* 링크를 마우스로 클릭 : 검정색 */
