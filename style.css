@@ -31,20 +31,19 @@ html, body {
     z-index: 10;
 }
 .content {
-    padding: calc(env(safe-area-inset-left) + 16px);
-    width: 100%;
+    padding: 48px 0;
+    width: 100vw;
     background-color: #ffffff;
 }
 .need_lift {
-    display: inline-block;
     display: flex;
+    margin: auto;
     flex-direction: column;;
     align-items: center;
-    margin-top: 32px;;
 }
 .lift_item {
-    width: 800px;
-    max-width: 80%;
+    width: 80%;
+    max-width: 800px;
 }
 .skill_img {
     width: 128px;
