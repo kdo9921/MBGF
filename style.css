@@ -49,6 +49,9 @@ html, body {
     width: 128px;
     height: 128px;;
 }
+li {
+    margin: 8px;
+}
 footer {
     background-color: #303030;
     color: #ffffff;
