@@ -26,12 +26,12 @@ html, body {
     display: inline-block;
     color: #ffffff;
     font-size: 4em;
-    margin: 32px;
+    margin: calc(env(safe-area-inset-left) + 32px);
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
     z-index: 10;
 }
 .content {
-    padding: 16px 0;
+    padding: calc(env(safe-area-inset-left) + 16px);
     width: 100%;
     background-color: #ffffff;
 }
@@ -51,7 +51,7 @@ html, body {
     height: 128px;;
 }
 footer {
-    background-color: #333333;
+    background-color: #303030;
     color: #ffffff;
     padding: 48px;
     text-align: right;
@@ -61,3 +61,13 @@ a:link { color: #cccccc; text-decoration: none; } /* 링크 방문 전 : 파란�
 a:visited { color: #cccccc; } /* 링크 방문 후 : 주황색 */
 a:hover { color: #9ce159; } /* 링크에 마우스 오버 : 초록색 */
 a:active { color: #999999; } /* 링크를 마우스로 클릭 : 검정색 */
+
+@media (prefers-color-scheme: dark) {
+    .content {
+        background-color: #303030;
+        color: #ffffff;
+    }
+    footer {
+        background-color: #222222;
+    }
+}
